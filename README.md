@@ -1,7 +1,7 @@
 
 # Selenium Web Driver
 
-Testing websites in JAVA useing Selenium framework.
+Testing websites in JAVA useing Selenium framework
 
 
 
