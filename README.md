@@ -26,11 +26,16 @@ Testing websites in JAVA useing Selenium framework.
 ## ⚙️ Installation
 ### 1. Prerequisites
 Download Maven and install it on your system.  
+
 [Maven download link](https://maven.apache.org/download.cgi) 
-### 2. Importing SoapUI projects
-1. Open SoapUI.
-2. Click on the **File** in the top panel.
-3. Select *Import project* from the context menu.
+### 2. Maven instalation
+1. exxxxxxxxtract downloaded maven file to any folder you like
+2. Add Maven executable to your system’s PATH variable
+3. go inside of bin directory and copy path
+4. open cmd and replace your path
+```bash
+   setx PATH "%PATH%;C:\path\to\maven\bin"
+```
    
 ## 📝 Usage
 1. Right-click on **Project**.
