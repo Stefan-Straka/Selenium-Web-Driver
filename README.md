@@ -29,7 +29,7 @@ Download Maven and install it on your system.
 
 [Maven download link](https://maven.apache.org/download.cgi) 
 ### 2. Maven instalation
-1. exxxxxxxxtract downloaded maven file to any folder you like
+1. extract downloaded maven file to any folder you like
 2. Add Maven executable to your system’s PATH variable
 3. go inside of bin directory and copy path
 4. open cmd and replace your path
