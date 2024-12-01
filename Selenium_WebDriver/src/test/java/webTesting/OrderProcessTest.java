@@ -12,49 +12,46 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Assertions_and_order_process_Test
-    {
+public class OrderProcessTest {
 
     private static WebDriver driver;
 
     @BeforeClass
-    public void setUp(){
+    public void setUp() {
 
-    driver = new ChromeDriver();
+        driver = new ChromeDriver();
 
 
-    driver.manage().window().maximize();
-    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(2));
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-    driver.manage().deleteAllCookies();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(2));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().deleteAllCookies();
 
     }
 
     @Test
-    public void TestPrihlasenia()
-        {
+    public void loginTest() {
         driver.navigate().to("https://www.saucedemo.com/");
 
-        //Login
+        // Login
         WebElement username = driver.findElement(By.xpath("//input[@id='user-name']"));
-            username.sendKeys("standard_user");
+        username.sendKeys("standard_user");
         WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
-            password.sendKeys("secret_sauce");
+        password.sendKeys("secret_sauce");
         WebElement login_button = driver.findElement(By.xpath("//input[@id='login-button']"));
-            login_button.click();
+        login_button.click();
 
 
-        //Asserting If I logged successfully
+        // Asserting If login process was successful
         String actual_URL = driver.getCurrentUrl();
         String expected_URL = "https://www.saucedemo.com/inventory.html";
         Assert.assertEquals(actual_URL, expected_URL);
 
 
-
         WebElement backpack = driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']"));
-            backpack.click();
+        backpack.click();
         WebElement cart = driver.findElement(By.xpath("//a[@class='shopping_cart_link']"));
-            cart.click();
+        cart.click();
 
 
         // Checking if button 'Continue shopping' is available
@@ -62,18 +59,18 @@ public class Assertions_and_order_process_Test
         boolean is_button_available = Continue_shopping.isDisplayed();
         Assertions.assertTrue(is_button_available);
 
-        // filling order formular
+        // filling order form
         WebElement Checkout = driver.findElement(By.xpath("//button[@id='checkout']"));
-            Checkout.click();
+        Checkout.click();
         WebElement first_name = driver.findElement(By.xpath("//input[@id='first-name']"));
-            first_name.sendKeys("Jim");
+        first_name.sendKeys("Jim");
         WebElement last_name = driver.findElement(By.xpath("//input[@id='last-name']"));
-            last_name.sendKeys("Brown");
+        last_name.sendKeys("Brown");
         WebElement postal_code = driver.findElement(By.xpath("//input[@id='postal-code']"));
-            postal_code.sendKeys("81103");
+        postal_code.sendKeys("81103");
         WebElement continue_button = driver.findElement(By.xpath("//input[@id='continue']"));
-            continue_button.click();
-            WebElement finish_button = driver.findElement(By.xpath("//button[@id='finish']"));
+        continue_button.click();
+        WebElement finish_button = driver.findElement(By.xpath("//button[@id='finish']"));
         finish_button.click();
 
 
@@ -87,19 +84,18 @@ public class Assertions_and_order_process_Test
         backHome_button.click();
 
 
-        //Logout
+        // Logout
         WebElement burger_button = driver.findElement(By.xpath("//button[@id='react-burger-menu-btn']"));
         burger_button.click();
         WebElement logout_button = driver.findElement(By.xpath("//a[@id='logout_sidebar_link']"));
         logout_button.click();
 
-        }
-
+    }
 
 
     @AfterClass
-    public void tearDown(){
-    //driver.quite();
+    public void tearDown() {
+        driver.quit();
     }
 
-    }
+}
