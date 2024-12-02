@@ -1,17 +1,6 @@
-
-<<<<<<< HEAD
 # Selenium Web Driver
 
 Testing websites in JAVA useing Selenium framework
-=======
-# Postman API
-
-Testing websites in JAVA useing Selenium framework.
->>>>>>> 5eead329ee969a5f5a5ee9fd228f748b930de5f4
-
-
-
-
 
 ## :bulb: Table of content
 - [Project Overview](#-project-overview)
@@ -30,46 +19,27 @@ Testing websites in JAVA useing Selenium framework.
 - Windows and Tabs test
 
 ## ⚙️ Installation
-<<<<<<< HEAD
-
-    
-## 📝 Usage
-
-
-
-## 📚 Documentation
-
-
-## 🗨️ Contact
-email: stefanstraka2424@gmail.com
-
-
-=======
 ### 1. Prerequisites
 Download Maven and install it on your system.  
 
 [Maven download link](https://maven.apache.org/download.cgi) 
 ### 2. Maven instalation
-1. extract downloaded maven file to any folder you like
-2. Add Maven executable to your system’s PATH variable
-3. go inside of bin directory and copy path
-4. open cmd and replace your path
+- Extract downloaded maven file to any folder you like
+- Add Maven executable to your system’s PATH variable
+- go inside of bin directory and copy path
+- open cmd and replace your path
 ```bash
    setx PATH "%PATH%;C:\path\to\maven\bin"
 ```
    
 ## 📝 Usage
-1. Right-click on **Project**.
-2. Select *Show Project View* from the context menu.
-3. Click on the **Test Suite** tab located on the top panel.
-4. Click on the **green play icon** to run all test suites.
-5. Click on the **Test Suite Log** in the bottom left corner to see results.
+
 
 ## 📚 Documentation
 
-[WSDL Documentation used in the SOAP Calculator project](http://www.dneonline.com/calculator.asmx?WSDL)<br>
-[URI Documentation used in the REST project](https://reqres.in)
+
+
+
 
 ## 🗨️ Contact
 email: stefanstraka2424@gmail.com
->>>>>>> 5eead329ee969a5f5a5ee9fd228f748b930de5f4
