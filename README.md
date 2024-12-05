@@ -1,6 +1,6 @@
 # Selenium Web Driver
 
-Testing websites in JAVA useing Selenium framework
+Testing websites useing Selenium framework
 
 ## :bulb: Table of content
 - [Project Overview](#-project-overview)
@@ -33,12 +33,9 @@ Download Maven and install it on your system.
 ```
    
 ## 📝 Usage
-
+Run package "webTesting" to run all tests
 
 ## 📚 Documentation
-
-
-
 
 
 ## 🗨️ Contact
